@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar"
 import Map from "../components/Map"
 import LocationSelector from "../components/LocationSelector"
+import Confirm from "../components/Confirm"
+
 const style = {
   wrapper: `h-screen w-screen flex felx-col`,
   main : `h-full w-screen flex-1 z-10 `,
@@ -23,7 +25,7 @@ export default function Home() {
        <div className={style.rideRequestContainer}>
           <div className={style.rideRequest}>
              <LocationSelector/>
-             {/* confirm ride */}
+             <Confirm/>
           </div>
        </div>
      </div>
